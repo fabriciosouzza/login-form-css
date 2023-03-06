@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <title>Camp.in</title>
 </head>
@@ -22,16 +22,16 @@
                         <img src="./assets/log-in.svg" alt="">
                         <p>Faça seu login</p>
                     </div>
-                    <p>Entre com suas informações de acesso</p>
+                    <p>Entre com suas informações de acesso.</p>
                 </div>
-                <form>
+                <form id="loginForm">
                     <div class="email_dv">
-                        <label for="email_in">E-mail</label>
+                        <label for="email_in" id="emailLabel">E-mail</label>
                         <input type="text" id="email_in" placeholder="Type your e-mail">
                     </div>
 
                     <div class="password_dv">
-                        <label for="password_in">Password</label>
+                        <label for="password_in" id="passId">Password</label>
                         <input type="text" id="password_in" placeholder="Type your password">
                     </div>
 
@@ -43,7 +43,7 @@
                             </div>
                             <a href="#">I forgot my password</a>
                         </div>
-                        <button>LOGIN</button>
+                        <button type="button" form="loginForm">LOGIN</button>
                     
                         <a href="#"><span>Don't have an account?</span> Sign up</a>
                     </div>

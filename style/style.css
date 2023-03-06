@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main {
@@ -45,14 +46,28 @@ body {
     background-color: #F1EADD;
     display: flex;
     flex-direction: column;
-    border-radius: 4px;
-    padding: 55px 120px;
+    border-radius: 5px;
+    padding: 55px 80px;
     box-sizing: content-box;
 }
 
 .form_modal form {
     display: flex;
     flex-direction: column;
+}
+
+#passId {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #574C3A;
+    margin-bottom: 5px;
+}
+
+#emailLabel {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #574C3A;
+    margin-bottom: 5px;
 }
 
 .login_text {
@@ -65,6 +80,7 @@ body {
     font-weight: 600;
     font-size: 24px;
     padding: 0px;
+    gap: 10px;
     margin-bottom: 5px;
 }
 
@@ -76,11 +92,30 @@ body {
 .email_dv {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .password_dv {
     display: flex;
     flex-direction: column;
+}
+
+.email_dv input {
+    width: 334px;
+    height: 36px;
+    background-color: #EFEAE2;
+    border: 1px solid #574C3A;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.password_dv input {
+    width: 334px;
+    height: 36px;
+    background-color: #EFEAE2;
+    border: 1px solid #574C3A;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .checkbutton_dv {
@@ -126,4 +161,22 @@ button {
     margin-bottom: 17px;
 }
 
+/*/////////////////////////////// HOVER-FOCUS ////////////////////////////////////*/
 
+button:hover {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    background-color: #4f4434;
+    cursor: pointer;
+}
+
+
+.email_dv input:focus {
+    box-shadow: 0px 0px 0px 2px #AD8F5D;
+    outline: #AD8F5D;
+}
+
+.password_dv input:focus {
+    box-shadow: 0px 0px 0px 2px #AD8F5D;
+    outline: #AD8F5D;
+}
