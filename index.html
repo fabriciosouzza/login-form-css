@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <title>Camp.in</title>
 </head>
@@ -11,27 +14,39 @@
     <div class="main">
         <div class="login_side">
             <div class="logotype">
-                <p>camp.in</p>
+                <img src="./assets/logo.svg" alt="">
             </div>
             <div class="form_modal">
                 <div class="login_text">
-                    <p>Faça seu login</p>
+                    <div class="do_the_login">
+                        <img src="./assets/log-in.svg" alt="">
+                        <p>Faça seu login</p>
+                    </div>
                     <p>Entre com suas informações de acesso</p>
                 </div>
                 <form>
-                    <label for="email_in">E-mail</label>
-                    <input type="text" id="email_in">
+                    <div class="email_dv">
+                        <label for="email_in">E-mail</label>
+                        <input type="text" id="email_in" placeholder="Type your e-mail">
+                    </div>
 
-                    <label for="password_in">Password</label>
-                    <input type="text" id="password_in">
-                    
-                    <label for="remember_check">Lembre-me</label>
-                    <input type="checkbox" name="remember_check" id="remember_check">
-                    <a href="#">I forgot my password</a>
+                    <div class="password_dv">
+                        <label for="password_in">Password</label>
+                        <input type="text" id="password_in" placeholder="Type your password">
+                    </div>
 
-                    <input type="button" value="Login">
+                    <div class="checkbutton_dv">
+                        <div class="check">
+                            <div>
+                            <input type="checkbox" name="remember_check" id="remember_check">
+                            <label for="remember_check">Remember Me</label>
+                            </div>
+                            <a href="#">I forgot my password</a>
+                        </div>
+                        <button>LOGIN</button>
                     
-                    <a href="#">Não tem uma conta? Registre-se</a>
+                        <a href="#"><span>Don't have an account?</span> Sign up</a>
+                    </div>
                 </form>
             </div>
         </div>
